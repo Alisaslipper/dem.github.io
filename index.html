@@ -165,7 +165,320 @@ MSE на тесте              0.026408        0.003884         85.29%<br>
      <a href="Новая таблица 3.xlsx">Скачать файл</a><br>
      <a href="Новая таблица 4.xlsx">Скачать файл</a><br>
 </p> 
+    <br>
+    18.05.2026 <br>
+# Ввод длины стороны квадрата <br>
+side = float(input("Введите длину стороны квадрата: ")) <br>
+ <br>
+# Вычисление площади <br>
+area = side * side <br>
+ <br>
+# Вывод результата <br>
+print("Площадь квадрата:", area) <br>
+    <br>
+# Ввод длины стороны квадрата <br>
+side = float(input("Введите длину стороны квадрата: ")) <br>
+ <br>
+# Вычисление площади <br>
+area = side * side <br>
+ <br>
+# Вывод результата <br>
+print("Площадь квадрата:", area) <br>
+<br>
+    # Ввод двух чисел <br>
+num1 = float(input("Введите первое число: ")) <br>
+num2 = float(input("Введите второе число: ")) <br>
+ <br>
+# Вычисление среднего арифметического <br>
+average = (num1 + num2) / 2 <br>
+ <br>
+# Вывод результата <br>
+print("Среднее арифметическое:", average) <br>
+   <br>
+# Ввод двух чисел от пользователя <br>
+num1 = float(input("Введите первое число: ")) <br>
+num2 = float(input("Введите второе число: ")) <br>
+ <br>
+# Вычисление среднего арифметического <br>
+average = (num1 + num2) / 2 <br>
+ <br>
+# Вывод результата <br>
+print("Среднее арифметическое:", average) <br>
+    <br>
+    import math <br>
+ <br>
+# Ввод длин катетов <br>
+a = float(input("Введите длину первого катета: ")) <br>
+b = float(input("Введите длину второго катета: ")) <br>
+ <br>
+# Вычисление гипотенузы по теореме Пифагора: c = sqrt(a^2 + b^2) <br>
+hypotenuse = math.sqrt(a**2 + b**2) <br>
+ <br>
+# Вычисление площади: S = (a * b) / 2 <br>
+area = (a * b) / 2 <br>
+ <br>
+# Вывод результатов <br>
+print(f"Гипотенуза: {hypotenuse}") <br>
+print(f"Площадь: {area}") <br>
+    <br>
+    # Ввод числа N <br>
+n = int(input("Введите число N: ")) <br>
+ <br>
+# Вычисление квадратов <br>
+val1 = (n - 1) ** 2 <br>
+val2 = n ** 2 <br> 
+val3 = (n + 1) ** 2 <br>
+ <br>
+# Вывод через запятую <br>
+print(f"{val1}, {val2}, {val3}") <br>
+    <br>
+    # Ввод года <br>
+year = int(input("Введите год: ")) <br>
+ <br>
+# Проверка на високосный год <br>
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0): <br>
+    print("Год високосный") <br>
+else: <br>
+    print("Год не високосный") <br>
+    <br>
+    # Ввод целого числа <br>
+number = int(input("Введите целое число: ")) <br>
+ <br>
+# Проверка на четность с помощью оператора остатка от деления (%) <br>
+if number % 2 == 0: <br>
+    print("Число четное") <br>
+else: <br>
+    print("Число нечетное") <br>
+    <br> 
+    # Ввод двух чисел <br>
+num1 = float(input("Введите первое число: ")) <br>
+num2 = float(input("Введите второе число: ")) <br>
+ <br>
+# Проверка условия <br>
+if num1 < num2: <br>
+    # Если первое меньше второго, вычисляем сумму <br>
+    result = num1 + num2 <br>
+    print(f"Первое число меньше второго. Сумма: {result}") <br>
+else: <br>
+    # Иначе (если первое больше или равно второму) вычисляем разность <br>
+    result = num1 - num2 <br>
+    print(f"Первое число не меньше второго. Разность: {result}") <br>
+    <br>
+    print("Первые 16 степеней числа 2:") <br>
+for i in range(16): <br>
+    print(f"2^{i} = {2 ** i}") <br>
+    <br>
+    count_even = 0  # Счетчик четных чисел <br>
+ <br>
+print("Введите 10 целых чисел:") <br>
+ <br>
+for i in range(10): <br>
+    num = int(input(f"Число {i + 1}: ")) <br>
+    if num % 2 == 0: <br>
+        count_even += 1 <br>
+ <br>
+print(f"Количество четных чисел: {count_even}") <br>
+    <br>
+    # Инициализация счетчиков <br>
+positive_count = 0 <br>
+negative_count = 0 <br>
+zero_count = 0 <br>
+ <br>
+print("Введите 10 целых чисел:") <br>
+ <br>
+for i in range(10): <br>
+    num = int(input(f"Число {i + 1}: ")) <br>
+     <br>
+    if num > 0: <br>
+        positive_count += 1 <br>
+    elif num < 0: <br>
+        negative_count += 1 <br>
+    else: <br>
+        zero_count += 1 <br>
+ <br>
+# Вывод результатов <br>
+print(f"Положительных чисел: {positive_count}") <br>
+print(f"Отрицательных чисел: {negative_count}") <br>
+print(f"Нулей: {zero_count}") <br>
+        <br>
+        # Инициализация переменных для хранения максимума и минимума <br>
+# Используем None, чтобы правильно обработать первое введенное число <br>
+max_num = None <br>
+min_num = None <br>
+ <br>
+print("Введите 10 целых чисел:") <br>
+ <br>
+for i in range(10): <br>
+    num = int(input(f"Число {i + 1}: ")) <br>
+     <br>
+    # Для первого числа устанавливаем и максимум, и минимум равными ему <br>
+    if max_num is None or num > max_num: <br>
+        max_num = num <br>
+         <br>
+    if min_num is None or num < min_num: <br>
+        min_num = num <br>
+ <br>
+# Вычисление разницы <br>
+difference = max_num - min_num <br>
+ <br>
+# Вывод результатов <br>
+print(f"Наибольшее число: {max_num}") <br>
+print(f"Наименьшее число: {min_num}") <br>
+print(f"Разница между наибольшим и наименьшим: {difference}") <br>
+        <br>
+        # Создаем пустой список для хранения чисел <br>
+A = [] <br>
+ <br>
+print("Введите 10 целых чисел:") <br>
+for i in range(10): <br>
+    num = int(input(f"Число {i + 1}: ")) <br>
+    A.append(num) <br>
+ <br>
+# Находим максимальный элемент в массиве <br>
+max_element = max(A) <br>
+ <br>
+# Подсчитываем количество элементов, равных максимальному <br>
+count_max = 0 <br>
+for num in A: <br>
+    if num == max_element: <br>
+        count_max += 1 <br>
+ <br>
+# Вывод результата <br>
+print(f"Массив: {A}") <br>
+print(f"Максимальный элемент: {max_element}") <br>
+print(f"Количество чисел, равных максимальному: {count_max}") <br>
+        <br>
+        # Инициализация списка и переменных для сумм <br>
+A = [] <br>
+sum_even_indices = 0  # Сумма элементов с четными индексами (0, 2, 4...) <br>
+sum_odd_indices = 0   # Сумма элементов с нечетными индексами (1, 3, 5...) <br>
+ <br>
+print("Введите 10 целых чисел:") <br>
+ <br>
+for i in range(10): <br>
+    num = int(input(f"Элемент с индексом {i}: ")) <br>
+    A.append(num) <br>
+     <br>
+    # Проверяем четность индекса <br>
+    if i % 2 == 0: <br>
+        sum_even_indices += num <br>
+    else: <br>
+        sum_odd_indices += num <br>
+ <br>
+# Вычисляем разницу <br>
+difference = sum_even_indices - sum_odd_indices <br>
+ <br>
+# Вывод результатов <br>
+print(f"Массив: {A}") <br>
+print(f"Сумма элементов с четными индексами: {sum_even_indices}") <br>
+print(f"Сумма элементов с нечетными индексами: {sum_odd_indices}") <br>
+print(f"Разница (четные индексы - нечетные индексы): {difference}") <br>
+        <br>
+        # Ввод текста от пользователя <br>
+text = input("Введите текст: ") <br>
+ <br>
+# Инициализация счетчика <br>
+count_digits = 0 <br>
+ <br>
+# Проходим по каждому символу в тексте <br>
+for char in text: <br>
+    # Проверка, является ли символ цифрой <br>
+    if char.isdigit(): <br>
+        count_digits += 1 <br>
 
+# Вывод результата <br>
+print(f"Количество арабских цифр в тексте: {count_digits}") <br>
+        <br>
+        # Ввод строки от пользователя <br>
+text = input("Введите строку: ") <br>
+ <br>
+# Удаление всех пробелов <br>
+# Метод replace заменяет все вхождения первого аргумента на второй <br>
+text_without_spaces = text.replace(" ", "") <br>
+ <br>
+# Вывод результата <br>
+print("Строка без пробелов:", text_without_spaces) <br>
+        <br>
+        # Ввод строки от пользователя <br>
+text = input("Введите строку: ") <br>
+ <br>
+# Разбиваем строку на слова.  <br>
+# split() без аргументов автоматически игнорирует несколько пробелов, табуляции и переводы строк <br>
+words = text.split() <br>
+ <br>
+# Проверяем, есть ли слова в строке (защита от пустого ввода) <br>
+if words: <br>
+    print("Первое слово:", words[0]) <br>
+else: <br>
+    print("Вы не ввели ни одного слова.") <br>
+        <br>
+        # Ввод текста от пользователя <br>
+text = input("Введите текст для записи в файл: ") <br>
+ <br>
+# Имя файла <br>
+filename = "output.txt" <br>
+ <br>
+# Запись текста в файл <br>
+# 'w' (write) означает режим записи. Если файла нет, он создастся. <br>
+# Если файл есть, его содержимое будет перезаписано. <br>
+# encoding='utf-8' нужен для корректной работы с русским языком <br>
+with open(filename, 'w', encoding='utf-8') as file: <br>
+    file.write(text) <br>
+ <br>
+print(f"Текст успешно записан в файл '{filename}'") <br>
+        <br>
+        def get_yes_no(prompt: str) -> bool: <br>
+    """Запрашивает отв ет 'да'/'нет', принимая разные варианты ввода.""" <br>
+    while True: <br>
+        ans = input(prompt).strip().lower() <br>
+        if ans in ('да', 'y', 'yes', '1', 'д'): <br>
+            return True <br>
+        elif ans in ('нет', 'n', 'no', '0', 'н'): <br>
+            return False <br>
+        print("⚠️ Пожалуйста, введите 'да' или 'нет'.") <br> 
+ <br>
+def play_game(): <br>
+    print("🤖 Игра: Компьютер угадывает ваше число") <br>
+    print("-" * 40) <br>
+     <br>
+    try: <br>
+        n = int(input("Введите нижнюю границу диапазона N: ")) <br>
+        m = int(input("Введите верхнюю границу диапазона M: ")) <br>
+    except ValueError: <br>
+        print("❌ Ошибка: введите целые числа.") <br>
+        return <br> 
+ <br>
+    if n >= m: <br>
+        print("❌ Ошибка: N должно быть строго меньше M.") <br>
+        return <br>
+ <br>
+    low, high = n, m <br>
+    questions = 0 <br>
+ <br>
+    print(f"\n🔹 Загадайте число от {low} до {high}.") <br>
+    print("🔹 Отвечайте че стно. Можно использовать: да/y/1 или нет/n/0") <br>
+    print("-" * 40) <br>
+ <br>
+    while low < high: <br>
+        mid = (low + high) // 2 <br>
+        questions += 1 <br>
+               <br>
+        is_greater = get_yes_no(f"❓ Вопрос {questions}: Ваше число больше {mid}? (да/нет): ")       <br>
+               <br>
+        if is_greater:       <br>
+            low = mid + 1       <br>
+        else:       <br>
+            high = mid       <br>
+       <br>
+    print("\n" + "=" * 40)       <br>
+    print(f"✅ Я угадал! Ваше число: {low}")       <br>
+    print(f"📊 Использовано вопросов: {questions}")       <br>
+    print(f"📏 Теоретический минимум для этого диапазона: {len(bin(high - low)) - 2} (бинарный поиск)")       <br>
+    print("=" * 40)       <br>
+       <br>
+if __name__ == "__main__":       <br>
+    play_game()       <br>
+        <br>
 </body>
 </html>
 ```
